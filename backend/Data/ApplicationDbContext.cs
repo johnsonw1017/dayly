@@ -9,5 +9,9 @@ public class ApplicationDbContext : IdentityDbContext<User>
         : base(options)
     {
     }
+
+    public DbSet<Feature> Features { get; set; }
+
+    public DbSet<Journal> Journals { get; set; }
 }
 

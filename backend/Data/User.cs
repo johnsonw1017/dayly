@@ -5,9 +5,10 @@ namespace backend.Data
 {
 	public class User : IdentityUser
 	{
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
+		public string? FirstName { get; set; }
+		public string? LastName { get; set; }
 		public DateTime DateJoined { get; set; }
-    }
+		public List<Feature>? Features { get; set; }
+	}
 }
 
